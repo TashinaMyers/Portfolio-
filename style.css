@@ -6,6 +6,7 @@
 
 body {
     background-image: url(./assets/background.jpeg);
+    background-repeat: no-repeat;
     background-color: #36454F;
 }
 
@@ -62,7 +63,6 @@ a {
     text-decoration: underline;
     display: inline-block;
     margin-top: 10%;
-    margin-left: 5px;
     font-size: 48px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
@@ -99,37 +99,34 @@ a {
     
     display: flex;
     align-items: center;
-    margin-left: 20%;
     
 }
 
 
 .tech {
     border-radius: 30%;
-    transform: scale(0.5, 0.5);
-    
+    transition: transform 0.3s ease;
+    margin: 20px;
+
 }
 
 .open {
     border-radius: 30%;
-    transform: scale(0.4, 0.4);  
+    transition: transform 0.3s ease;
+    margin-top: 20px;
 }
 
 .beyond {
     border-radius: 30%;
-    transform: scale(0.5, 0.5);
+    transition: transform 0.3s ease;
+    margin: 20px;
 }
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-   
-    margin-bottom: 50px;
-    display: flex;
-}
+  
+  .tech:hover,
+  .open:hover,
+  .beyond:hover {
+    transform: scale(1.2); /* Scale the element to 120% of its size */
+  }
 
 .content {
     width: 75%;
